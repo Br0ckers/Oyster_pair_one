@@ -28,11 +28,11 @@ describe Journey do
     #   expect{subject.touch_out(station2)}.to change{ subject.balance}.by -Oystercard::MIN_BALANCE
     # end
 
-    it 'Forgets entry station after touching out' do
-      subject.touch_in(station, 10)
-      subject.touch_out(station2)
-      expect(subject.entry_station).to eq nil
-    end
+    # it 'Forgets entry station after touching out' do
+    #   subject.touch_in(station, 10)
+    #   subject.touch_out(station2)
+    #   expect(subject.entry_station).to eq nil
+    # end
 
     it 'Remembers the exit station after touching out' do
       subject.touch_in(station, 10)
@@ -88,15 +88,15 @@ describe Journey do
       expect(subject.fare).to eq Oystercard::MIN_BALANCE
     end
 
-    # it 'returns 6 for not touching out' do
-    #   subject.touch_in(station, 10)
-    #   expect(subject.fare).to eq(6)
-    # end
-    #
-    # it 'returns 6 for not touching in' do
-    #   subject.touch_out(station2)
-    #   expect(subject.fare).to eq(6)
-    # end
+    it 'returns 6 for not touching out' do
+      subject.touch_in(station, 10)
+      expect(subject.fare).to eq(6)
+    end
+
+    it 'returns 6 for not touching in' do
+      subject.touch_out(station2)
+      expect(subject.fare).to eq(6)
+    end
 
   end
 end
