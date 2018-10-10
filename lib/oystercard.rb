@@ -38,6 +38,6 @@ class Oystercard
   #   !!entry_station
   # end
 
-  private :deduct
+  # private :deduct
 
 end

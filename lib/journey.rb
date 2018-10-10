@@ -1,8 +1,8 @@
-require 'oystercard'
+require './lib/oystercard.rb'
 
 class Journey
 
-  attr_reader :entry_station, :exit_station, :previous_journey, :all_journeys
+  attr_reader :entry_station, :exit_station, :previous_journey, :all_journeys, :card
 
 
   def initialize
@@ -22,6 +22,7 @@ class Journey
     @exit_station = station
     @previous_journey[:exit_station] = station
     @all_journeys << @previous_journey
+    @card.deduct(fare)
   end
 
   def in_journey?

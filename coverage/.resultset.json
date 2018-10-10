@@ -1,6 +1,28 @@
 {
   "RSpec": {
     "coverage": {
+      "/Users/Neil/Projects/Oyster_pair_one/spec/journey_log_spec.rb": [
+        1,
+        null,
+        1,
+        1,
+        1,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "/Users/Neil/Projects/Oyster_pair_one/lib/journey_log.rb": [
+        1,
+        1,
+        null,
+        null
+      ],
       "/Users/Neil/Projects/Oyster_pair_one/spec/journey_spec.rb": [
         1,
         null,
@@ -341,6 +363,6 @@
         null
       ]
     },
-    "timestamp": 1539179156
+    "timestamp": 1539184540
   }
 }
