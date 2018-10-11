@@ -1,3 +1,4 @@
+
 class Journey_log
   attr_reader :previous_journey
 
